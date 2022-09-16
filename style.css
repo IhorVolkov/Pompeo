@@ -1,0 +1,797 @@
+/* 
+Fonts:
+Pacifico
+Poppins
+Libre Franklin
+Playfair Display
+Lato
+*/
+
+@import url('http://fonts.cdnfonts.com/css/pacifico');
+@import url('http://fonts.cdnfonts.com/css/poppins');
+@import url('http://fonts.cdnfonts.com/css/libre-franklin');
+@import url('http://fonts.cdnfonts.com/css/playfair-display');
+@import url('http://fonts.cdnfonts.com/css/lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+main {
+    min-width: 1440px;
+}
+.header_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 135px 0px 135px;
+    align-items: center;
+    height: 91px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+.text_logo {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.text_logo:hover {
+    color:#AC1313;
+}
+.header_nav {
+    width: 455px;
+    height: 64px;
+    padding: 20px 15px 20px 21px;
+    display: flex;
+    align-items: center;
+}
+.nav_menu {
+    display: flex;
+    align-items: center;
+}
+.nav_menu li {
+    padding-right: 40px;
+    list-style-type: none;
+}
+.nav_menu li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6C6C6C;
+    text-decoration: none;
+}
+.nav_menu li a:hover {
+    color: #AC1313;
+}
+.nav_menu li .active {
+    color: #AC1313;  
+}
+.nav_menu .menu:nth-child(4) {
+    padding-right: 61px;
+}
+.nav_menu li .cart {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+}
+.nav_menu li:last-child {
+    padding-right: 0;
+}
+
+.nav_menu li .cart::before {
+    content: " ";
+    background-image: url("./img/basket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 54px;
+}
+.vertical_line {
+    margin-left: 19px;
+    border-right: 1px solid #EBEBEB;
+    width: 1px;
+    height: 38px;
+    background-color: #EBEBEB;
+}
+.header_bg {
+    background-image: url("./img/bg_header.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 1px;
+    height: 708px;
+    width: 100%;
+}
+.unique_container {
+    margin: 94px 144px 114px 144px;
+    display: flex;
+    /* width: 100%; */
+    /* if i fixed size as width: 100%, my img in container climbs out to all html/body block */
+    height: 500px;
+    justify-content: space-between;
+}
+.unique_porcelain {
+    display: block;
+    width: 576px;
+    height: 305px;
+    text-align: left;
+    margin-top: 97.5px;
+    position: relative;
+}
+.symbol {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    color: #AC1313;
+}
+header .symbol {
+    position: absolute;
+    top: 0;
+    /* right:97px; */
+}
+.unique_porcelain .red_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+}
+.unique_porcelain h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+.unique_porcelain h6 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-top: 14px;
+}
+.unique_porcelain .red_btn {
+    margin-top: 51px;
+    background: #AC1313;
+    border-radius: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    width: 201px;
+    height: 62px;
+    /* padding: 19px 31px 21px 40px; */
+    cursor: pointer;
+}
+/* 1я секция */
+.porcelain_pottery_section {
+    display: block;
+    height: 969px;
+    width: 100%;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border-bottom: 1px solid #EBEBEB;
+    position: relative;
+}
+.product_categories {
+    display: block;
+    width: 1200px;
+    height: 729px;
+    padding: 120px;
+    margin: 0 auto;
+}
+.product_headlines {
+    display: block;
+    height: 117px; 
+    text-align: center;
+}
+.product_headlines .red_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+}
+.product_headlines h2 {
+    margin-top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+}
+.product_headlines .symbol {
+    position: relative;
+    left: 0;
+    bottom: 8px;
+}
+.product_icons {
+    margin-top: 60px;
+    display: flex;
+    height: 240px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.vases_container,.mugs_container,.plates_container {
+    display: block;
+    width: 240px;
+    height: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 75px;
+    position: relative;
+}
+.vases_container{
+background-color: #D9AA61;
+}
+.mugs_container {
+background-color: #E4560F;
+}
+.plates_container {
+background-color: #9A0F0F;
+}
+.info_container {
+    margin-top: 90px;
+    display: flex;
+    height: 222px;
+    justify-content: center;
+}
+.info_container .hand_grafted,.info_container .we_provide {
+    display: block;
+    /* width: 510px; */
+    width: 480px;
+}
+.info_container .we_provide {
+    margin-left: 60px;
+}
+.hand_grafted h3,.we_provide h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 62px;
+}
+.hand_grafted p,.we_provide p {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C6C6C;
+}
+.product_categories .vertical_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DBDBDB;
+    transform: rotate(-90deg);
+    position: absolute;
+    /* section< looking on maket margin-top: 291px and max-width of transform text: 209.2px, so 210/2 = 104.6px is a center of transform text + 291px = 396px margin-top */
+    top: 395.605px;
+    left: 60px;
+}
+.orange_ceramic_goldblack_pottery_section {
+    height: 1033px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #EBEBEB;
+    position: relative;
+}
+.goldvase_and_ceramic_container {
+    padding: 221px 120px 120px 120px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 692px;
+}
+.goldvase_and_ceramic_container .vertical_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DBDBDB;
+    transform: rotate(-90deg);
+    position: absolute;
+    /* as on maket margin-top 363px from section to transform text + (transform text center 222,76/2 = 111,38 + 363 = 474,38px*/
+    top: 474.38px;
+    right: 37px;
+}
+.gold_vase_container {
+    padding: 0px 14px 0px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.gold_vase_photo,.ceramic_photo {
+    display: block;
+    width: 500px;
+    height: 220px;
+    background: #F5F5F5;
+    position: relative;
+}
+/* Add a photo gold vase */
+.gold_vase_photo img{
+   position: absolute;
+   top: -144.5px;
+   left: 110px;
+}
+.ceramic_photo img{
+    position: absolute;
+    top: -98.5px;
+    left: 75px;
+ }
+.gold_vase_info {
+    display: block;
+    width: 400px;
+    height: 204px;
+    margin-top: 20px;
+    margin-left: 86px;
+}
+.gold_vase_info h3,.ceramic_info h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+}
+.gold_vase_info p,.ceramic_info p {
+    margin-top: 23px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C6C6C;
+}
+.gold_vase_info h5,.ceramic_info h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 27px;
+}
+.gold_vase_info h5:hover,.ceramic_info h5:hover {
+    color: #AC1313;
+}
+.ceramic_container {
+    margin-top: 220px;
+    padding: 0 14px 0 14px;
+    height: 248px;
+    display: flex;
+    justify-content: space-between;
+}
+.ceramic_info {
+    display: block;
+    width: 400px;
+    height: 228px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.pottery_collection_section {
+    display: block;
+    height: 1697px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.pottery_collection_section .vertical_text {
+    position: absolute;
+    top: 791px;
+    left: 23px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DBDBDB;
+    transform: rotate(-90deg);
+}
+
+ .pottery_collection_container {
+    display: block;
+    width: 1200px;
+    padding: 120px;
+    margin: 0 auto;
+ }
+ .pottery_headlines {
+    text-align: center;
+ }
+ .pottery_headlines .red_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+ }
+ .pottery_headlines h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    margin-top: 17px;
+ }
+ .pottery_collection_row_one,.pottery_collection_row_two {
+    display: flex;
+    justify-content: center;
+ }
+ .pottery_collection_row_one {
+    margin-top: 60px;
+ }
+ .mint_pottery,.dark_bowl {
+    margin: 0px 20px 0px 20px;
+ }
+ .pottery_collection_row_two {
+    margin-top: 20px;
+    margin-bottom: 60px;
+ }
+ .plate_info,.mint_pottery_info,.set_info,.orange_ceramic_info,
+ .dark_bowl_info,.square_pottery_info {
+    margin-top: 5px;
+    padding: 15px 200px 15px 0px;
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+ }
+ .plate_info h6,.mint_pottery_info h6,.set_info h6,.orange_ceramic_info h6,
+ .dark_bowl_info h6,.square_pottery_info h6 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+ }
+ .plate_info p,.mint_pottery_info p,.set_info p,.orange_ceramic_info p,
+ .dark_bowl_info p,.square_pottery_info p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+ }
+ .pottery_collection_section button {
+    background: #AC1313;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    width:214px;
+    height: 62px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px 33px;
+    margin: 0 auto;
+    cursor: pointer;
+ }
+ .ready_to_section {
+    display: block;
+    height: 471px;
+    width: 100%;
+    margin: 0 auto;
+    background-image:url("./img/bg_plates.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .ready_to_container {
+    display: block;
+    width: 1200px;
+    height: 230px;
+    margin: 0 auto;
+    padding: 120px 730px 120px 0px;
+ }
+ .ready_to_container .red_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+ }
+ .ready_to_container h2 {
+    margin-top: 7px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #000000;
+ }
+ .ready_to_container h6 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6C6C6C;
+    margin-top: 13px;
+ }
+ .ready_to_container button {
+    background: #AC1313;
+    display: block;
+    width: 195px;
+    height: 62px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+ .latest_news_section {
+    width: 100%;
+    height: 686px;
+    display: block;
+    position: relative;
+ }
+ .latest_news_section .vertical_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DBDBDB;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 266.29px;
+    right: 53px;
+ }
+
+ .latest_news_container {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 122px 144px 134px 144px;
+    text-align: center;
+ }
+ .latest_news_container img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+ }
+ .latest_news_container .red_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D77474;
+    margin-top: 40px;
+ }
+ .latest_news_container h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+ }
+ .latest_news_container .symbol {
+    position: relative;
+    left: 0;
+    bottom: 8px;
+ }
+ .frame_input {
+    display: flex;
+    justify-content:center;
+    margin-top: 60px;
+ }
+ .latest_news_container input[type=text] {
+    display: block;
+    width: 320px;
+    height: 45px;
+    border: 1px solid #EBEBEB;
+    padding: 12.5px 149px 12.5px 45px;
+ }
+ .latest_news_container button {
+    display: block;
+    margin-left: 4px;
+    width: 175px;
+    height: 45px;
+    background: #000000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+ }
+ .latest_news_container .signup {
+    margin-top: 40px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #A1A1A1;
+ }
+ .latest_news_container .signup::before {
+    content: " ";
+    background-image: url("./img/");
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #8534FF;
+    position: relative;
+    top: 18px;
+    left: 355px;
+ }
+ .footer {
+    display: block;
+    height: 658px;
+    width: 100%;
+    background: rgba(219, 219, 219, 0.1);
+ }
+ .footer_container {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 120px 120px 165px 120px;
+    text-align: center;
+ }
+ .pompeo_footer_info {
+    padding: 0px 24px 0 24px;
+ }
+ .pompeo_footer_info h2 {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 40px;
+    color: #000000;
+ }
+ .pompeo_footer_info p {
+    margin-top: 30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+ }
+ .pompeo_footer_icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 14px 0px 14px;
+    margin-top: 60px;
+ }
+ .pompeo_footer_icons h6 {
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+ }
+ .pompeo_footer_icons p {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+ }
+ .copyright {
+    display: block;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-top: 1px solid #EBEBEB;;
+    /* margin-top: 80px; */
+    background-color: rgba(219, 219, 219, 0.1);
+    
+ }
+ .copyright p {
+    padding: 30px 159px 20px 159px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #6C6C6C;
+ }
+ .copyright p a {
+text-decoration: none;
+font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 22px;
+text-align: center;
+color: #000000;
+ }
